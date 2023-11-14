@@ -1,0 +1,89 @@
+/* index.css */
+.img-container {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  body{
+ margin: 30px;
+    background: rgb(209,134,213);
+    background: linear-gradient(180deg, rgba(209,134,213,1) 29%, rgba(0,172,255,1) 62%); 
+  }
+  
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .div1 {
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .div2 {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    font-size:22px;
+    font-weight: bold;
+  }
+
+  h2{
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(222, 218, 218);
+  }
+
+  button{
+    width:200px;
+    height: 40px;
+    font-size: 19px;
+    cursor: pointer;
+    
+  }
+
+  button:hover{
+    background-color: rgb(159, 159, 159);
+  }
+  
+  .cont {
+
+    height:420px;
+    display: grid;
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  
+
+  .cont:hover .img-container{
+    transform: scale(1.15);
+ 
+  }
+
+
+  
+  .di {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  /* Additional styling for creating the desired layout */
+  @media (max-width: 900px) {
+    .cont,
+    .di {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
